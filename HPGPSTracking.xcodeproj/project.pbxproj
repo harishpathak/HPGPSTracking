@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15164411D4731B600561ADA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15164401D4731B600561ADA /* main.m */; };
+		B15164441D4731B600561ADA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15164431D4731B600561ADA /* AppDelegate.m */; };
+		B15164471D4731B600561ADA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15164461D4731B600561ADA /* ViewController.m */; };
+		B151644A1D4731B600561ADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15164481D4731B600561ADA /* Main.storyboard */; };
+		B151644C1D4731B600561ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B151644B1D4731B600561ADA /* Assets.xcassets */; };
+		B151644F1D4731B600561ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B151644D1D4731B600561ADA /* LaunchScreen.storyboard */; };
+		B151645A1D4731B600561ADA /* DemoCoreLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15164591D4731B600561ADA /* DemoCoreLocationTests.m */; };
+		B15164651D4731B600561ADA /* DemoCoreLocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15164641D4731B600561ADA /* DemoCoreLocationUITests.m */; };
+		B15164731D4734C500561ADA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15164721D4734C500561ADA /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B15164561D4731B600561ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15164341D4731B500561ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B151643B1D4731B500561ADA;
+			remoteInfo = DemoCoreLocation;
+		};
+		B15164611D4731B600561ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15164341D4731B500561ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B151643B1D4731B500561ADA;
+			remoteInfo = DemoCoreLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B151643C1D4731B500561ADA /* HPGPSTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPGPSTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15164401D4731B600561ADA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B15164421D4731B600561ADA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B15164431D4731B600561ADA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B15164451D4731B600561ADA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B15164461D4731B600561ADA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B15164491D4731B600561ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B151644B1D4731B600561ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B151644E1D4731B600561ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B15164501D4731B600561ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15164551D4731B600561ADA /* HPGPSTracking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPGPSTracking.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15164591D4731B600561ADA /* DemoCoreLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCoreLocationTests.m; sourceTree = "<group>"; };
+		B151645B1D4731B600561ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15164601D4731B600561ADA /* HPGPSTracking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPGPSTracking.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15164641D4731B600561ADA /* DemoCoreLocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCoreLocationUITests.m; sourceTree = "<group>"; };
+		B15164661D4731B600561ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15164721D4734C500561ADA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15164391D4731B500561ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15164731D4734C500561ADA /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15164521D4731B600561ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B151645D1D4731B600561ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B15164331D4731B500561ADA = {
+			isa = PBXGroup;
+			children = (
+				B15164721D4734C500561ADA /* CoreLocation.framework */,
+				B151643E1D4731B600561ADA /* HPGPSTracking */,
+				B15164581D4731B600561ADA /* DemoCoreLocationTests */,
+				B15164631D4731B600561ADA /* DemoCoreLocationUITests */,
+				B151643D1D4731B500561ADA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B151643D1D4731B500561ADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B151643C1D4731B500561ADA /* HPGPSTracking.app */,
+				B15164551D4731B600561ADA /* HPGPSTracking.xctest */,
+				B15164601D4731B600561ADA /* HPGPSTracking.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B151643E1D4731B600561ADA /* HPGPSTracking */ = {
+			isa = PBXGroup;
+			children = (
+				B15164421D4731B600561ADA /* AppDelegate.h */,
+				B15164431D4731B600561ADA /* AppDelegate.m */,
+				B15164451D4731B600561ADA /* ViewController.h */,
+				B15164461D4731B600561ADA /* ViewController.m */,
+				B15164481D4731B600561ADA /* Main.storyboard */,
+				B151644B1D4731B600561ADA /* Assets.xcassets */,
+				B151644D1D4731B600561ADA /* LaunchScreen.storyboard */,
+				B15164501D4731B600561ADA /* Info.plist */,
+				B151643F1D4731B600561ADA /* Supporting Files */,
+			);
+			name = HPGPSTracking;
+			path = DemoCoreLocation;
+			sourceTree = "<group>";
+		};
+		B151643F1D4731B600561ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15164401D4731B600561ADA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15164581D4731B600561ADA /* DemoCoreLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B15164591D4731B600561ADA /* DemoCoreLocationTests.m */,
+				B151645B1D4731B600561ADA /* Info.plist */,
+			);
+			path = DemoCoreLocationTests;
+			sourceTree = "<group>";
+		};
+		B15164631D4731B600561ADA /* DemoCoreLocationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B15164641D4731B600561ADA /* DemoCoreLocationUITests.m */,
+				B15164661D4731B600561ADA /* Info.plist */,
+			);
+			path = DemoCoreLocationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B151643B1D4731B500561ADA /* HPGPSTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15164691D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTracking" */;
+			buildPhases = (
+				B15164381D4731B500561ADA /* Sources */,
+				B15164391D4731B500561ADA /* Frameworks */,
+				B151643A1D4731B500561ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPGPSTracking;
+			productName = DemoCoreLocation;
+			productReference = B151643C1D4731B500561ADA /* HPGPSTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B15164541D4731B600561ADA /* HPGPSTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B151646C1D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTrackingTests" */;
+			buildPhases = (
+				B15164511D4731B600561ADA /* Sources */,
+				B15164521D4731B600561ADA /* Frameworks */,
+				B15164531D4731B600561ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15164571D4731B600561ADA /* PBXTargetDependency */,
+			);
+			name = HPGPSTrackingTests;
+			productName = DemoCoreLocationTests;
+			productReference = B15164551D4731B600561ADA /* HPGPSTracking.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B151645F1D4731B600561ADA /* HPGPSTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B151646F1D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTrackingUITests" */;
+			buildPhases = (
+				B151645C1D4731B600561ADA /* Sources */,
+				B151645D1D4731B600561ADA /* Frameworks */,
+				B151645E1D4731B600561ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15164621D4731B600561ADA /* PBXTargetDependency */,
+			);
+			name = HPGPSTrackingUITests;
+			productName = DemoCoreLocationUITests;
+			productReference = B15164601D4731B600561ADA /* HPGPSTracking.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15164341D4731B500561ADA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ASPL;
+				TargetAttributes = {
+					B151643B1D4731B500561ADA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8Z3NJ84MJU;
+					};
+					B15164541D4731B600561ADA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B151643B1D4731B500561ADA;
+					};
+					B151645F1D4731B600561ADA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B151643B1D4731B500561ADA;
+					};
+				};
+			};
+			buildConfigurationList = B15164371D4731B500561ADA /* Build configuration list for PBXProject "HPGPSTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15164331D4731B500561ADA;
+			productRefGroup = B151643D1D4731B500561ADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B151643B1D4731B500561ADA /* HPGPSTracking */,
+				B15164541D4731B600561ADA /* HPGPSTrackingTests */,
+				B151645F1D4731B600561ADA /* HPGPSTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B151643A1D4731B500561ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B151644F1D4731B600561ADA /* LaunchScreen.storyboard in Resources */,
+				B151644C1D4731B600561ADA /* Assets.xcassets in Resources */,
+				B151644A1D4731B600561ADA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15164531D4731B600561ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B151645E1D4731B600561ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15164381D4731B500561ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15164471D4731B600561ADA /* ViewController.m in Sources */,
+				B15164441D4731B600561ADA /* AppDelegate.m in Sources */,
+				B15164411D4731B600561ADA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15164511D4731B600561ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B151645A1D4731B600561ADA /* DemoCoreLocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B151645C1D4731B600561ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15164651D4731B600561ADA /* DemoCoreLocationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15164571D4731B600561ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B151643B1D4731B500561ADA /* HPGPSTracking */;
+			targetProxy = B15164561D4731B600561ADA /* PBXContainerItemProxy */;
+		};
+		B15164621D4731B600561ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B151643B1D4731B500561ADA /* HPGPSTracking */;
+			targetProxy = B15164611D4731B600561ADA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B15164481D4731B600561ADA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15164491D4731B600561ADA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B151644D1D4731B600561ADA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B151644E1D4731B600561ADA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15164671D4731B600561ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B15164681D4731B600561ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B151646A1D4731B600561ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DemoCoreLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DemoCoreLocation;
+				PRODUCT_NAME = HPGPSTracking;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B151646B1D4731B600561ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DemoCoreLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DemoCoreLocation;
+				PRODUCT_NAME = HPGPSTracking;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B151646D1D4731B600561ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DemoCoreLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crmnext.DemoCoreLocationTests;
+				PRODUCT_NAME = HPGPSTracking;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGPSTracking.app/HPGPSTracking";
+			};
+			name = Debug;
+		};
+		B151646E1D4731B600561ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DemoCoreLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crmnext.DemoCoreLocationTests;
+				PRODUCT_NAME = HPGPSTracking;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGPSTracking.app/HPGPSTracking";
+			};
+			name = Release;
+		};
+		B15164701D4731B600561ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DemoCoreLocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crmnext.DemoCoreLocationUITests;
+				PRODUCT_NAME = HPGPSTracking;
+				TEST_TARGET_NAME = DemoCoreLocation;
+			};
+			name = Debug;
+		};
+		B15164711D4731B600561ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DemoCoreLocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crmnext.DemoCoreLocationUITests;
+				PRODUCT_NAME = HPGPSTracking;
+				TEST_TARGET_NAME = DemoCoreLocation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15164371D4731B500561ADA /* Build configuration list for PBXProject "HPGPSTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15164671D4731B600561ADA /* Debug */,
+				B15164681D4731B600561ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15164691D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B151646A1D4731B600561ADA /* Debug */,
+				B151646B1D4731B600561ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B151646C1D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B151646D1D4731B600561ADA /* Debug */,
+				B151646E1D4731B600561ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B151646F1D4731B600561ADA /* Build configuration list for PBXNativeTarget "HPGPSTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15164701D4731B600561ADA /* Debug */,
+				B15164711D4731B600561ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15164341D4731B500561ADA /* Project object */;
+}
