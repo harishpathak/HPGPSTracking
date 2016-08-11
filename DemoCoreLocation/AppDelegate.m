@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  DemoCoreLocation
 //
-//  Created by ASPL on 7/26/16.
-//  Copyright © 2016 ASPL. All rights reserved.
+//  Created by Harish Pathak on 7/26/16.
+//  Copyright © 2016 HP. All rights reserved.
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -78,7 +78,7 @@
         bgTask = UIBackgroundTaskInvalid;
     }];
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:60.0
+    timer = [NSTimer scheduledTimerWithTimeInterval:10.0
                                                       target:self
                                                     selector:@selector(startTrackingBg)
                                                     userInfo:nil
@@ -114,11 +114,35 @@
         if ([locationManager respondsToSelector:@selector(setAllowsBackgroundLocationUpdates:)]) {
             [locationManager setAllowsBackgroundLocationUpdates:YES];
         }
+    [locationManager requestWhenInUseAuthorization];
         [locationManager requestAlwaysAuthorization];
         locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         locationManager.distanceFilter = kCLDistanceFilterNone;
     
-    if([[[NSUserDefaults standardUserDefaults] valueForKey:@"isBackgroundON"] isEqualToString:@"YES"]){
+    //BACKGROUND REFRESH
+    UIAlertView * alert;
+    
+    //We have to make sure that the Background App Refresh is enable for the Location updates to work in the background.
+    if ([[UIApplication sharedApplication] backgroundRefreshStatus] == UIBackgroundRefreshStatusDenied) {
+        
+        alert = [[UIAlertView alloc]initWithTitle:@""
+                                          message:@"The app doesn't work without the Background App Refresh enabled. To turn it on, go to Settings > General > Background App Refresh"
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil, nil];
+        [alert show];
+        
+    } else if ([[UIApplication sharedApplication] backgroundRefreshStatus] == UIBackgroundRefreshStatusRestricted) {
+        alert = [[UIAlertView alloc]initWithTitle:@""
+                                          message:@"The functions of this app are limited because the Background App Refresh is disable."
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil, nil];
+        [alert show];
+        
+    }
+    
+    if([[[NSUserDefaults standardUserDefaults] valueForKey:@"isBackgroundON"] isEqualToString:@"YES"] && [self shouldFetchUserLocation]){
  
         // Once configured, the location manager must be "started".
         [locationManager startUpdatingLocation];
@@ -146,6 +170,49 @@
     NSLog(@"Location manager failed with error: %@",error.description);
 }
 
+-(BOOL)shouldFetchUserLocation{
+    
+    BOOL shouldFetchLocation= NO;
+    
+    if ([CLLocationManager locationServicesEnabled]) {
+        switch ([CLLocationManager authorizationStatus]) {
+            case kCLAuthorizationStatusAuthorizedAlways:
+                shouldFetchLocation= YES;
+                break;
+            case kCLAuthorizationStatusDenied:
+            {
+                UIAlertView *alert= [[UIAlertView alloc]initWithTitle:@"Error" message:@"App level settings has been denied" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [alert show];
+                alert= nil;
+            }
+                break;
+            case kCLAuthorizationStatusNotDetermined:
+            {
+                UIAlertView *alert= [[UIAlertView alloc]initWithTitle:@"Error" message:@"The user is yet to provide the permission" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [alert show];
+                alert= nil;
+            }
+                break;
+            case kCLAuthorizationStatusRestricted:
+            {
+                UIAlertView *alert= [[UIAlertView alloc]initWithTitle:@"Error" message:@"The app is recstricted from using location services." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [alert show];
+                alert= nil;
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }
+    else{
+        UIAlertView *alert= [[UIAlertView alloc]initWithTitle:@"Error" message:@"The location services seems to be disabled from the settings." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+        alert= nil;
+    }
+    
+    return shouldFetchLocation;
+}
 
 
 @end
